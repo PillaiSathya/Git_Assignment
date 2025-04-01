@@ -9,6 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the project...'
+                sh 'echo "This is a dummy JAR file" > output.jar'  // Create a dummy JAR file
             }
         }
         stage('Archive Artifact') {
